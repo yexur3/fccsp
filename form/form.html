@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id = "title">Feedback form of app</h1>
+    <p id = "description">This is form for feedback about application</p>
+    <fieldset>
+        <legend>Enter you details</legend>
+        <label id = "name-label">Enter your name (required):</label>
+        <input id = "name" type = "text" required placeholder="Ex. Will Johnson" value = "name">
+        <label id = "email-label">Enter your email (required):</label>
+        <input id = "email" type = "email" required placeholder="Ex. example@gmail.com" value = "email">
+        <label id = "number-label">Enter your phone number:</label>
+        <input id = "number" type = "number" min = "5" max = "20" placeholder="Ex. +5 555 55 55" value = "number">
+    </fieldset>
+
+    <fieldset>
+        <legend>Is you like your app?</legend>
+        <label for = "yes-option">Yes</label>
+        <input id = "yes-option" type = "radio" name = "like-app">
+        <label for = "no-option">No</label>
+        <input id = "no-option" type = "radio" name = "like-app">
+    </fieldset>
+
+    <fieldset>
+        <legend>Why do you choose this app?</legend>
+
+        <label for = "better">Better than others</label>
+        <input type = "checkbox" id = "better" name = "better" value = "better">
+
+        <label for = "random">Accidentaly came across the app</label>
+        <input type = "checkbox" id = "random" name = "random" value = "random">
+    </fieldset>
+
+    <fieldset>
+        <legend>Ratings</legend>
+
+        <label for = "comfort">How you rate this app about comfort?</label>
+        <select name = "comfort" id = "comfort">
+            <option value = "poor">Poor</option>
+            <option value = "satisfactory">Satisfactory</option>
+            <option value = "good">Good</option>
+            <option value = "very-good">Very Good</option>
+            <option selected value = "excellent">Excellent</option>
+        </select>
+
+        <label for = "service">How you rate this app about service provision?</label>
+        <select name = "service" id = "service">
+            <option value = "poor">Poor</option>
+            <option value = "satisfactory">Satisfactory</option>
+            <option value = "good">Good</option>
+            <option value = "very-good">Very Good</option>
+            <option selected value = "excellent">Excellent</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Anything else?</legend>
+        <label for = "comments">Enter another comments</label>
+        <textarea cols = "30" rows = "10" name = "comments" id = "comments"></textarea>
+    </fieldset>
+</body>
+
+</html>
